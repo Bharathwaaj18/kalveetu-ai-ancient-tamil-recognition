@@ -52,7 +52,7 @@ Kalveetu AI is a deep learning project that focuses on recognizing ancient Tamil
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/your-username/kalveetu-ai.git
+git clone https://github.com/Bharathwaaj18/kalveetu-ai-ancient-tamil-recognition.git
 cd kalveetu-ai
 pip install -r requirements.txt
 jupyter notebook
