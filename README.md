@@ -60,8 +60,8 @@ jupyter notebook
 
 ### Notebooks
 
-1. `gan_data_augmentation.ipynb` – GAN training & synthetic data generation
-2. `cnn_tamil_recognition.ipynb` – CNN training & evaluation (93% accuracy)
+1. `gan data augmentation.ipynb` – GAN training & synthetic data generation
+2. `cnn tamil recognition.ipynb` – CNN training & evaluation (93% accuracy)
 
 ---
 
@@ -69,10 +69,8 @@ jupyter notebook
 
 ```
 kalveetu-ai/
-├── gan_data_augmentation.ipynb   # GAN for data augmentation
-├── cnn_tamil_recognition.ipynb   # CNN classifier (93% accuracy)
-├── tamil_cnn.pth                 # Trained model weights
-├── generated_samples/            # GAN-generated images
+├── gan data augmentation.ipynb   # GAN for data augmentation
+├── cnn tamil recognition.ipynb   # CNN classifier (93% accuracy)
 └── README.md
 ```
 
@@ -83,7 +81,7 @@ kalveetu-ai/
 * ✅ **Phase 1:** GAN + CNN for single-character recognition (Completed)
 * ⏳ **Phase 2:** CRNN-based sequence OCR for full inscriptions
 * ⏳ **Phase 3:** Streamlit web app + ONNX model deployment
-* ⏳ **Phase 4:** Multi-script support (Tamil-Brahmi, Grantha)
+* ⏳ **Phase 4:** Translation 
 
 ---
 
