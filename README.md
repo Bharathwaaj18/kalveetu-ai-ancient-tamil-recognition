@@ -126,4 +126,3 @@ Predictions are stored using SQLite. Logged details include:
 
 This project is intended for educational and academic use.
 
-```
