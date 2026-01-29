@@ -1,92 +1,115 @@
-# Kalveetu AI – Ancient Tamil Script Recognition using GAN-based Data Augmentation
+📜 Kalveetu AI – Ancient Tamil Character Recognition
 
-**93% CNN Accuracy | GAN-based Data Augmentation | Low-Data Regime Solution**
+Kalveetu AI is a deep learning–based OCR web application that recognizes ancient Tamil (Thamizhi) inscription characters and maps them to their modern Tamil equivalents.
+The system uses a CNN model built with PyTorch and a Streamlit interface for real-time prediction.
 
-Kalveetu AI is a deep learning project that focuses on recognizing ancient Tamil-Brahmi (Thamizhi) characters from stone inscriptions and mapping them to their modern Tamil equivalents. The project addresses the extreme data scarcity problem common in historical and epigraphical datasets.
+✨ Features
 
----
+🧠 CNN-based ancient Tamil character recognition
 
-## 🎯 Problem Statement
+📸 Upload character images and get instant predictions
 
-* Ancient Tamil inscriptions often have **only ~1 image per character**
-* Standard deep learning models fail due to **insufficient training data**
-* Manual data collection or annotation is **not feasible** for historical scripts
+📊 Confidence score for each prediction
 
----
+🗂️ Prediction logging using SQLite
 
-## ✅ Proposed Solution (2-Stage Pipeline)
+🧩 Clean, modular, production-style Python code
 
-### 1️⃣ GAN-based Data Augmentation
+💻 Simple and intuitive Streamlit UI
 
-* A Generative Adversarial Network (GAN) is trained per character
-* Generates **100× synthetic images per class** from a single real sample
-* Expands the dataset while preserving visual characteristics of inscriptions
-
-### 2️⃣ CNN-based Character Classification
-
-* A Convolutional Neural Network is trained on the augmented dataset
-* Predicts **ancient Tamil-Brahmi → modern Tamil characters**
-* Achieves strong performance despite the low-data regime
-
----
-
-## 📊 Results
-
-| Model          | Dataset Type               | Accuracy |
-| -------------- | -------------------------- | -------- |
-| CNN Classifier | GAN-Augmented Tamil-Brahmi | **93%**  |
-
----
-
-## 🛠 Tech Stack
-
-* **PyTorch**
-* **GAN (Generator + Discriminator)**
-* **CNN (Image Classification)**
-* ImageFolder Pipeline
-* Jupyter Notebook
-* NumPy, Matplotlib, PIL
-
----
-
-## 🚀 Quick Start
-
-```bash
-git clone https://github.com/Bharathwaaj18/kalveetu-ai-ancient-tamil-recognition.git
-cd kalveetu-ai
-pip install -r requirements.txt
-jupyter notebook
-```
-
-### Notebooks
-
-1. `gan data augmentation.ipynb` – GAN training & synthetic data generation
-2. `cnn tamil recognition.ipynb` – CNN training & evaluation (93% accuracy)
-
----
-
-## 📁 Repository Structure
-
-```
+🏗️ Project Structure
 kalveetu-ai/
-├── gan data augmentation.ipynb   # GAN for data augmentation
-├── cnn tamil recognition.ipynb   # CNN classifier (93% accuracy)
+│
+├── app.py                  # Streamlit application
+├── config.py               # Configuration & UI styling
+├── model.py                # CNN architecture
+├── model_manager.py        # Model loading & prediction
+├── database.py             # SQLite database handling
+├── utils.py                # Helper functions
+│
+├── models/
+│   └── tamil_model_weights.pth   (not included in repo)
+│
+├── requirements.txt
 └── README.md
-```
 
----
+🧠 Model Overview
 
-## 🔮 Future Work
+Input: RGB character image (64 × 64)
 
-* ✅ **Phase 1:** GAN + CNN for single-character recognition (Completed)
-* ⏳ **Phase 2:** CRNN-based sequence OCR for full inscriptions
-* ⏳ **Phase 3:** Streamlit web app + ONNX model deployment
-* ⏳ **Phase 4:** Translation 
+Model: Convolutional Neural Network (CNN)
 
----
+Output: Predicted Tamil character + confidence score
 
-## 👤 Author
+Framework: PyTorch
 
-**Bharathwaaj**
-Final-Year AI Engineering Student
-Interests: Deep Learning • Computer Vision • Generative AI
+🚀 How to Run the Application
+1️⃣ Clone the repository
+git clone https://github.com/USERNAME/kalveetu-ai.git
+cd kalveetu-ai
+
+2️⃣ Create virtual environment (recommended)
+python -m venv venv
+source venv/binactivate     # Windows: venv\Scripts\activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Download model weights
+
+Model weights are not included in this repository.
+
+➡️ Download from: [Add your model link here]
+
+Place the file in:
+
+models/tamil_model_weights.pth
+
+5️⃣ Run the Streamlit app
+streamlit run app.py
+
+🖼️ Output
+
+Upload an image of an ancient Tamil character
+
+The predicted modern Tamil character is displayed
+
+Confidence score shown alongside the prediction
+
+(You can add screenshots here for better presentation)
+
+🗃️ Prediction Logging
+
+Predictions are stored using SQLite
+
+Logged details:
+
+Image filename
+
+Predicted character
+
+Confidence score
+
+Timestamp
+
+🛠️ Tech Stack
+
+Python
+
+PyTorch
+
+Streamlit
+
+SQLite
+
+PIL / Torchvision
+
+📌 Notes
+
+Trained model weights are excluded to keep the repository lightweight
+
+This repository focuses on application-level deployment and inference
+
+📜 License
+
+This project is intended for educational and academic use.
