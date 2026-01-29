@@ -1,11 +1,11 @@
-```markdown
+
 # 📜 Kalveetu AI – Ancient Tamil Character Recognition
 
 **Kalveetu AI** is a deep learning–based OCR web application that recognizes ancient Tamil (Thamizhi) inscription characters and maps them to their modern Tamil equivalents. The system uses a CNN model built with PyTorch and a Streamlit interface for real-time prediction.
 
 ---
 
-## ✨ Features
+ ✨ Features
 
 - 🧠 CNN-based ancient Tamil character recognition  
 - 📸 Upload character images and get instant predictions  
@@ -18,7 +18,7 @@
 
 ## 🏗️ Project Structure
 
-```
+
 
 kalveetu-ai/
 │
@@ -34,11 +34,7 @@ kalveetu-ai/
 │
 ├── requirements.txt
 └── README.md
-
-````
-
----
-
+----
 ## 🧠 Model Overview
 
 - **Input:** RGB character image (64 × 64)  
@@ -131,6 +127,4 @@ Predictions are stored using SQLite. Logged details include:
 
 This project is intended for educational and academic use.
 
-```
-::contentReference[oaicite:0]{index=0}
 ```
