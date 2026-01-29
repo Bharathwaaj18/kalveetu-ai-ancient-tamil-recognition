@@ -70,7 +70,7 @@ pip install -r requirements.txt
 4️⃣ Download model weights:
 
 Model weights are not included in this repository.
-➡️ Download from: [Add your model link here]
+➡️ Download from: [https://drive.google.com/file/d/1uew6LakYRwBi-Xfenw1k8rfExZiYG-jp/view?usp=drive_link]
 
 Place the file in:
 
