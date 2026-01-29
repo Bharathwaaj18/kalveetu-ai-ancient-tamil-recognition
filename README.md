@@ -122,8 +122,6 @@ Predictions are stored using SQLite. Logged details include:
 * Trained model weights are excluded to keep the repository lightweight
 * This repository focuses on application-level deployment and inference
 
----
-
 ## 📜 License
 
 This project is intended for educational and academic use.
