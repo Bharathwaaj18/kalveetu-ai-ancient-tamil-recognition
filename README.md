@@ -20,21 +20,22 @@
 
 
 
+```
 kalveetu-ai/
 │
-├── app.py              # Streamlit application
-├── config.py           # Configuration & UI styling
-├── model.py            # CNN architecture
-├── model_manager.py    # Model loading & prediction
-├── database.py         # SQLite database handling
-├── utils.py            # Helper functions
+├── app.py # Streamlit application
+├── config.py # Configuration & UI styling
+├── model.py # CNN architecture
+├── model_manager.py # Model loading & prediction
+├── database.py # SQLite database handling
+├── utils.py # Helper functions
 │
 ├── models/
-│   └── tamil_model_weights.pth (not included)
+│ └── tamil_model_weights.pth (not included)
 │
 ├── requirements.txt
 └── README.md
-----
+```
 ## 🧠 Model Overview
 
 - **Input:** RGB character image (64 × 64)  
